@@ -4,7 +4,7 @@
 
 [New Version](https://github.com/GCoppel/Resume_Website)
 
-# [Website Link](https://georgecoppel.com)
+# [georgecoppel.com](https://georgecoppel.com)
 
 Features:
 
