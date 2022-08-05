@@ -14,7 +14,7 @@ Features:
 
 -Reactive menus, submenus, and graphics (spacing, color, text-decoration, etc.)
 
--Animated png graphics including planes, birds, and R2D2. 
+-Animated graphics including planes, birds, R2D2, and some nifty rave lights.
 
 -Audio and video (mp3 & mp4) elements.
 
