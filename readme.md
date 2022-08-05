@@ -6,6 +6,8 @@
 
 # [georgecoppel.com](https://georgecoppel.com)
 
+**Particle system built using "Three.js Starter" by Bruno Simon, https://threejs-journey.xyz/**
+
 Features:
 
 -7 unique visual styles: Light, Dark, Rave, Rainy, Beach, Desert, Blender.
@@ -17,8 +19,6 @@ Features:
 -Animated graphics including planes, birds, R2D2, and some nifty rave lights.
 
 -Audio and video (mp3 & mp4) elements.
-
-Particle system built from "Three.js Starter" by Bruno Simon, https://threejs-journey.xyz/
 
 # Preview Images:
 ![Landing page with "style" selector](README_Images/readme_styleselect.jpg)
