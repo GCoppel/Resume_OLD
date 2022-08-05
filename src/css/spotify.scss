@@ -1,0 +1,285 @@
+
+body {
+    margin: 0;
+    background: rgb(17, 17, 17);
+    color: white;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+li.spotify-mode {
+    border: 3px solid green;
+    border-radius: 5em;
+    font-weight: bold;
+
+    &:hover {
+        background: green;
+        color: white;
+    }
+}
+
+.main-header {
+    margin-top: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    nav.mode-select {
+        display: none;
+    };
+
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+}
+
+.menu-open-btn {
+    cursor: pointer;
+    filter: invert(100%) sepia(0%) saturate(7493%) hue-rotate(132deg) brightness(100%) contrast(101%);
+}
+
+nav.mode-select.menu-btn {
+    display: block;
+}
+
+.menu-items {
+    list-style-type: none;
+    font-weight:normal;
+}
+
+.header {
+    margin-top: 1.5em;
+    margin-left: 1em;
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: bold;
+
+    span {
+        color: red;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 1em;
+    margin-top: .5em;
+}
+
+.grid-item {
+    display: flex;
+    background: rgb(48,48,48);
+    margin: .3em;
+    border-radius: .3em;
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+
+    img {
+        width: 5em;
+        height: 5em;
+        border-top-left-radius: .3em;
+        border-bottom-left-radius: .3em;
+    }
+
+    .grid-item-name {
+        margin-top: 2em;
+        margin-left: 1em;
+        font-weight: bold;
+    }
+
+    &:hover {
+        background:rgb(60, 60, 60)
+    }
+}
+
+.h-scroller {
+    margin-left: 1em;
+    overflow: auto;
+    white-space: nowrap;  
+
+    div {
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.artist {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin: 1em;
+
+    img {
+        width: 10em;
+        height: 10em;
+        border-radius: 10em;
+    }
+
+    .caption {
+        margin-top: 0.5em;
+        display: block;
+    }
+
+    &:hover {
+        margin-right: 0.5em;
+        margin-top: 0;
+        img {
+            width: 10.5em;
+            height: 10.5em;
+            filter: drop-shadow(0px 0px 4px);
+        }
+    }
+}
+
+.playlist {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin: 1em;
+
+    img {
+        width: 10em;
+        height: 10em;
+    }
+
+    .caption {
+        margin-top: 0.5em;
+        display: block;
+    }
+
+    &:hover {
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+        img {
+            width: 10.5em;
+            height: 10.5em;
+            filter: drop-shadow(0px 0px 4px);
+        }
+    }
+}
+
+
+div.info-container {
+    display: none;
+}
+
+div.infomenu {
+    position: fixed;
+    z-index: 999;
+    width: 90%;
+    height: 4em;
+    margin: 1em;
+    background: rgba(0, 0, 0, 0.596);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    top:5em;
+
+    div {
+        background: black;
+        border-radius: 1em;
+        margin-top: 2.2em;
+
+        p {
+            padding: 2em;
+        }
+    }
+}
+
+div.infomenu.menu-btn {
+    display: block;
+}
+
+nav.mode-select {
+    position: fixed;
+    z-index: 999; //High z-index places it over other elements
+    width: 55%;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.829);
+    height: 100vh; //Sets it to device/screen height
+    padding: 1em;
+
+    ul.menu-items {
+        margin-top: 3em;
+    }
+
+    li {
+        a{
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    }
+    animation: fadeIn .35s;
+}
+
+div.player {
+    position: fixed;
+    z-index: 999;
+    width: 90%;
+    margin: 1em;
+    background: rgba(0, 0, 0, 0.596);
+    border-radius: 1em;
+    top:5em;
+
+    iframe {
+        margin-top:2.2em;
+    }
+
+    animation: fadeIn .35s;
+}
+
+div.player.menu-btn {
+    display: block;
+}
+
+.menu-close-btn {
+    cursor: pointer;
+    float: right;
+    margin: .5em;
+    padding: .1em;
+    &:hover {
+        border: 1px solid;
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }

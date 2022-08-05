@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Coppel - Blender Mode</title>
+    <link rel="stylesheet" href="css/blender.css">
+</head>
+
+<div class="sun2"></div>
+<img class="cloud1" src="images/cloud1.png" alt="A cloud">
+<img class="cloud2" src="images/cloud2.png" alt="A cloud">
+<img class="plane" src="images/plane.png" alt="A passing plane">
+
+<body>
+
+    <img class="background" src="images/Office.png" alt="A home-office background rendered in Blender">
+
+    <div id="Home" class="home">
+        <div class="titlecard">
+            <h1>GEORGE COPPEL</h1>
+            <div class="sc-container">
+                <div class="style-changer" onclick="styleChanger()"></div>
+            </div>
+            <p>Clean and Classy.</p>
+        </div>
+        <nav class="button-box">
+                <div onclick="toggle1()">About Me</div>
+                <div onclick="toggle2()">Skills</div>
+                <div onclick="toggle3()">Coursework</div>
+                <div onclick="toggle4()">Experience</div>
+        </nav>
+    </div>
+
+    <article id="styleMenu" style="display: none" class="styleMenu">
+        <img src="images/exit.svg" alt="close menu" onclick="styleChanger()">
+        <a class="index" href="index.html">Style List</a>
+        <a href="light.html">Light Mode</a>
+        <a href="dark.html">Dark Mode</a>
+        <a href="rave.html">Rave Mode</a>
+        <a href="rainy.html">Rainy Mode</a>
+        <a href="beach.html">Beach Mode</a>
+        <a href="desert.html">Desert Mode</a>
+        <a href="">Blender Mode</a>
+    </article>
+
+    <div class="info">
+        <article id="Item 1" style="display: none" >
+            <img src="images/exit.svg" alt="close menu" onclick="toggle1()">
+            <h1>About Me</h1>
+            <ul>
+                <li>Pursuing BS in Computer Science at UAH</li>
+                <br>
+                <li>Current Standing: Junior</li>
+                <br>
+                <li>Projected Graduation: Fall 2023</li>
+                <br>
+                <li>GPA: 3.9 / 4.0</li>
+            </ul>
+        </article>
+        <article class="item2" id="Item 2" style="display: none">
+            <img src="images/exit.svg" alt="close menu" onclick="toggle2()">
+            <h1>Skills</h1>
+            <ul>
+                <li>Languages: <ul>
+                        <li>Java</li>
+                        <li>C/C++</li>
+                        <li>Python</li>
+                        <li>HTML & CSS (Obviously)</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Frontend Development</li>
+                <br>
+                <li>Advanced understanding of Microsoft Office Suite</li>
+                <br>
+                <li>Moderate understanding of Google and Adobe Suites</li>
+                <br>
+                <li>Moderate understanding of Blender 3D modelling software</li>
+            </ul>
+        </article>
+        <article class="item3" id="Item 3" style="display: none">
+            <img src="images/exit.svg" alt="close menu" onclick="toggle3()">
+            <h1>Completed Coursework</h1>
+            <ul>
+                <li class="clickable" onclick="toggle321()">CS 321 - Intro to Object-Oriented Programming in Java</li>
+                <br>
+                <li class="clickable" onclick="toggle309()">CS 309 - Computer Organization and Switching Theory</li>
+                <br>
+                <li class="clickable" onclick="toggle221()">CS 221 - Computer Science II: Data Structures</li>
+                <br>
+                <li class="clickable" onclick="toggle214()">CS 214 - Intro to Discrete Structure</li>
+                <br>
+                <li>CS 121 - Computer Science I</li>
+                <br>
+                <li>CS 102 - Intro to C Programming</li>
+                <br>
+                <li>MA 244 - Intro to Linear Algebra</li>
+                <br>
+                <li>MA 171, 172, and 201 - Calculus A-C</li>
+            </ul>
+            <br>
+            <h1>In-Progress (Fall 2022)</h1>
+            <ul>
+                <li class="clickable" onclick="toggle371()">CS 371 - Mobile Computing App Inct & D</li>
+                <br>
+                <li class="clickable" onclick="toggle330()">CS 330 - Artificial Intelligence & Game Dev</li>
+                <br>
+                <li class="clickable" onclick="toggle317()">CS 317 - Intro to Design/Analysis of Algorithms</li>
+                <br>
+                <li class="clickable" onclick="toggle301()">EH 301 - Technical Writing</li>
+                <br>
+                <li>MA 385 - Intro to Probability & Statistics</li>
+            </ul>
+        </article>
+        <article id="Item 4" style="display: none">
+            <img src="images/exit.svg" alt="close menu" onclick="toggle4()">
+            <h1>Experience</h1>
+            <ul>
+                <li>Secretary of UAH Circle K International<ul><li>Jan 2022 - Present</li></ul></li>
+                <br>
+                <li>Member of UAH Geographical Information Systems Club<ul><li>Jan 2022 - Present</li></ul></li>
+                <br>
+                <li>Starbucks Barista<ul><li>Jun - Dec 2021</li></ul></li>
+            </ul>
+        </article>
+    </div>
+
+    <div class="subinfo">
+        <article id="321" style="display: none">
+            <img src="images/exit.svg" alt="close menu" onclick="toggle321()">
+            <h2>CS 321</h2>
+            <p>"Writing substantial object-oriented programs in Java, including design, documentation and testing. Advanced data structures (e.g., balanced trees, hash tables). Graphical interface programming using the Java abstract windowing toolkit. Comparison with other object-oriented languages, notably C++."</p>
+        </article>
+        <article id="309" style="display: none">
+            <img src="images/exit.svg" alt="close menu" onclick="toggle309()">
+            <h2>CS 309 + Lab</h2>
+            <p>"Boolean algebra, Boolean function minimization techniques, design and analysis of combinational circuits, design and analysis of sequential circuits. Computer hardware organization, including CPU, instruction representation and executive. Programing in a representative assembly language, including floating point programming. Overview of software systems: loaders, assembler, compiler, interpreters, operating systems." Includes a lab section.</p>
+        </article>
+        <article id="221" style="display: none">
+            <img src="images/exit.svg" alt="close menu" onclick="toggle221()">
+            <h2>CS 221</h2>
+            <p>"Advanced features of the C++ programming language, including pointers, recursion, classes, and inheritance. Fundamental data structures including linked lists, stacks, queues, binary search trees. Basic sort and search algorithms. Design, development, and documentation of object-oriented programs."</p>
+        </article>
+        <article id="214" style="display: none">
+            <img src="images/exit.svg" alt="close menu" onclick="toggle214()">
+            <h2>CS 214</h2>
+            <p>"Review of set algebra including mappings and relations. Algebraic structures including semigroups and groups. Elements of theory of directed and undirected graphs; Boolean algebra and propositional logic and applications of these structures to various areas of computer science."</p>
+        </article>
+        <article id="371" style="display: none">
+            <img src="images/exit.svg" alt="close menu" onclick="toggle371()">
+            <h2>CS 371</h2>
+            <p>"Considers application design for the mobile space with emphasis on mobile computer interfaces, including GUI for mobile environments, entertainment computing, and cross-platform development."</p>
+        </article>
+        <article id="330" style="display: none">
+            <img src="images/exit.svg" alt="close menu" onclick="toggle330()">
+            <h2>CS 330</h2>
+            <p>"Techniques and concepts of artificial intelligence applied game development and production. Topics: path planning, decision making, tactics, and non-rational behaviors."</p>
+        </article>
+        <article id="317" style="display: none">
+            <img src="images/exit.svg" alt="close menu" onclick="toggle317()">
+            <h2>CS 317</h2>
+            <p>"Introduction to complexity analysis of algorithms; emphasis on searching, sorting, finding spanning trees and shortest paths in graphs. Design techniques such as divide & conquer, dynamic programming, and backtracking. Introduction to problem classification; i.e. NP, intractable, and unsolvable."</p>
+        </article>
+        <article id="301" style="display: none">
+            <img src="images/exit.svg" alt="close menu" onclick="toggle301()">
+            <h2>EH 301</h2>
+            <p>"Practical writing, especially technical or scientific reports and proposals, with emphasis on organization, research, and presentation."</p>
+        </article>
+    </div>
+
+    <div class="message">
+        <h1>Warning:</h1>
+        <p>Switch to a 16:9 aspect ratio for this to look... good.</p>
+    </div>
+
+    <script>
+
+        var item1 = document.getElementById('Item 1');  
+        function toggle1() {  
+            if(item1.style.display == "block") {
+                item1.style.display = "none";
+            }
+            else {
+                item1.style.display = "block";
+            }
+        }
+        var item2 = document.getElementById("Item 2"); 
+        function toggle2() {   
+            if(item2.style.display == "block") {
+                item2.style.display = "none";
+            }
+            else {
+                item2.style.display = "block";
+            }
+        }
+        var item3 = document.getElementById("Item 3"); 
+        function toggle3() {   
+            if(item3.style.display == "block") {
+                item3.style.display = "none";
+            }
+            else {
+                item3.style.display = "block";
+            }
+        }
+        var item4 = document.getElementById("Item 4"); 
+        function toggle4() {   
+            if(item4.style.display == "block") {
+                item4.style.display = "none";
+            }
+            else {
+                item4.style.display = "block";
+            }
+        }
+
+        var styleMenu = document.getElementById('styleMenu');
+        function styleChanger() {
+            if(styleMenu.style.display == "block") {
+                styleMenu.style.display = "none";
+            }
+            else {
+                styleMenu.style.display = "block";
+            }
+        }
+
+        
+        var CS321 = document.getElementById('321');
+        function toggle321() {
+            if(CS321.style.display == "block") {
+                CS321.style.display = "none";
+            }
+            else {
+                CS321.style.display = "block";
+            }
+        }   
+        var CS309 = document.getElementById('309');
+        function toggle309() {
+            if(CS309.style.display == "block") {
+                CS309.style.display = "none";
+            }
+            else {
+                CS309.style.display = "block";
+            }
+        }
+        var CS221 = document.getElementById('221');
+        function toggle221() {
+            if(CS221.style.display == "block") {
+                CS221.style.display = "none";
+            }
+            else {
+                CS221.style.display = "block";
+            }
+        }
+        var CS214 = document.getElementById('214');
+        function toggle214() {
+            if(CS214.style.display == "block") {
+                CS214.style.display = "none";
+            }
+            else {
+                CS214.style.display = "block";
+            }
+        }
+        var CS371 = document.getElementById('371');
+        function toggle371() {
+            if(CS371.style.display == "block") {
+                CS371.style.display = "none";
+            }
+            else {
+                CS371.style.display = "block";
+            }
+        }
+        var CS330 = document.getElementById('330');
+        function toggle330() {
+            if(CS330.style.display == "block") {
+                CS330.style.display = "none";
+            }
+            else {
+                CS330.style.display = "block";
+            }
+        }
+        var CS317 = document.getElementById('317');
+        function toggle317() {
+            if(CS317.style.display == "block") {
+                CS317.style.display = "none";
+            }
+            else {
+                CS317.style.display = "block";
+            }
+        }
+        var EH301 = document.getElementById('301');
+        function toggle301() {
+            if(EH301.style.display == "block") {
+                EH301.style.display = "none";
+            }
+            else {
+                EH301.style.display = "block";
+            }
+        }
+        var CS371 = document.getElementById('371');
+        function toggle371() {
+            if(CS371.style.display == "block") {
+                CS371.style.display = "none";
+            }
+            else {
+                CS371.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

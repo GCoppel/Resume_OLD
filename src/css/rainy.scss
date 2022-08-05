@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(22,22,22);
+    color: white;
+    font-family: "Exo", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    overflow: hidden;
+}
+
+audio {
+    display: none;
+} 
+
+#rain {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .credits {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 5px;
+      a {
+          font-size: small;
+          display: block;
+          text-decoration: none;
+          color: white;
+          opacity: .25;
+          transition: .5s;
+      }
+      a:hover {
+          opacity: 1;
+      }
+  }
+
+
+.home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    .titlecard {
+        text-align: center;
+        border-style: solid;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 0;
+        border-right-width: 0;
+        margin-bottom: 2em;
+        h1 {
+          font-family: 'Petit Formal Script', cursive;
+          font-size: 2.5em;
+        }
+    }
+    .sc-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .style-changer {
+      margin-bottom: 1em;
+      width: 50px;
+      height: 50px;
+      border: 1px solid white;
+      border-radius: 100%;
+      cursor: pointer;
+      transition: 3s;
+      &:hover {
+        background: white;
+      }
+    }
+    .button-box {
+        div {
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 1em;
+          border: 1px solid white;
+          border-radius: .3em;
+          margin-left: 25%;
+          margin-right: 25%;
+          margin-top: .5em;
+          margin-bottom: .5em;
+          cursor: pointer;
+          padding: 6px 10px;
+          transition: .5s;
+            &:hover {
+              background: rgba(255, 255, 255, 0.1);
+              margin-left: 20%;
+              margin-right: 20%;
+            }
+        }
+    }
+}
+
+.styleMenu {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: rgb(48, 48, 48);
+  color: white;
+  border-radius: .3em;
+  padding: 1em;
+
+  img {
+    cursor: pointer;
+  }
+  .index {
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    &:hover {
+      padding: .5em;
+    }
+  }
+  a {
+    margin-top: 1em;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+    border: 1px solid white;
+    border-radius: .3em;
+    transition: .5s;
+  }
+  a:hover {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  animation: fadeInFull 1s;
+}
+
+.clickable {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.info {
+    article {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background: rgb(48, 48, 48);
+        color: white;
+        border-radius: .3em;
+
+        img {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            cursor: pointer;
+        }
+
+        h1 {
+            margin-top: 2em;
+            margin-bottom: 1.5em;
+            margin-left: 1.4em;
+            text-decoration:underline;
+            text-underline-offset: .5em;
+        }
+        p {
+            margin: 2em;
+            line-height: 1.5em;
+        }
+        ul {
+          line-height: 2em;
+          margin-right: 1em;
+        }
+        animation: fadeInFull 1s;
+    }
+}
+
+
+.subinfo {
+  article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    max-width: 500px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: rgb(61, 61, 61);
+    color: white;
+    border: 1px solid lightgrey;
+    border-radius: .3em;
+
+    img {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        cursor: pointer;
+    }
+
+    h2 {
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+        margin-left: 1.4em;
+        text-decoration:underline;
+        text-underline-offset: .5em;
+    }
+    p {
+        margin: 1em;
+        line-height: 2em;
+        margin-bottom: 2em;
+    }
+    animation: fadeInFull .5s;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  body {
+    overflow: visible;
+  }
+  .button-box{
+    font-size: smaller;
+  }
+  .info {
+    article {
+      width: 90%;
+    }
+  }
+  .item2 {
+    font-size: 80%;
+  }
+  .item3 {
+    font-size: 60%;
+    img {
+      width: 5%;
+    }
+  }
+  .subinfo {
+    article{
+      width: 85%;
+    }
+  }
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:.05;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:.05;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:.05;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:.05;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:.05;}
+  }
+
+  @keyframes fadeInFull {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeInFull {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeInFull {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeInFull {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeInFull {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @keyframes fadeOutFull {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+  
+  @-moz-keyframes fadeOutFull {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+  
+  @-webkit-keyframes fadeOutFull {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
+  
+  @-o-keyframes fadeOutFull {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeOutFull {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }

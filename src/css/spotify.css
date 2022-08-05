@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  background: #111111;
+  color: white;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+li.spotify-mode {
+  border: 3px solid green;
+  border-radius: 5em;
+  font-weight: bold;
+}
+
+li.spotify-mode:hover {
+  background: green;
+  color: white;
+}
+
+.main-header {
+  margin-top: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.main-header nav.mode-select {
+  display: none;
+}
+
+.main-header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.menu-open-btn {
+  cursor: pointer;
+  -webkit-filter: invert(100%) sepia(0%) saturate(7493%) hue-rotate(132deg) brightness(100%) contrast(101%);
+          filter: invert(100%) sepia(0%) saturate(7493%) hue-rotate(132deg) brightness(100%) contrast(101%);
+}
+
+nav.mode-select.menu-btn {
+  display: block;
+}
+
+.menu-items {
+  list-style-type: none;
+  font-weight: normal;
+}
+
+.header {
+  margin-top: 1.5em;
+  margin-left: 1em;
+  font-size: 1.5em;
+  text-align: left;
+  font-weight: bold;
+}
+
+.header span {
+  color: red;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin: 1em;
+  margin-top: .5em;
+}
+
+.grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #303030;
+  margin: .3em;
+  border-radius: .3em;
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 5em;
+  height: 5em;
+  border-top-left-radius: .3em;
+  border-bottom-left-radius: .3em;
+}
+
+.grid-item .grid-item-name {
+  margin-top: 2em;
+  margin-left: 1em;
+  font-weight: bold;
+}
+
+.grid-item:hover {
+  background: #3c3c3c;
+}
+
+.h-scroller {
+  margin-left: 1em;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.h-scroller div {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.artist {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin: 1em;
+}
+
+.artist img {
+  width: 10em;
+  height: 10em;
+  border-radius: 10em;
+}
+
+.artist .caption {
+  margin-top: 0.5em;
+  display: block;
+}
+
+.artist:hover {
+  margin-right: 0.5em;
+  margin-top: 0;
+}
+
+.artist:hover img {
+  width: 10.5em;
+  height: 10.5em;
+  -webkit-filter: drop-shadow(0px 0px 4px);
+          filter: drop-shadow(0px 0px 4px);
+}
+
+.playlist {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin: 1em;
+}
+
+.playlist img {
+  width: 10em;
+  height: 10em;
+}
+
+.playlist .caption {
+  margin-top: 0.5em;
+  display: block;
+}
+
+.playlist:hover {
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+
+.playlist:hover img {
+  width: 10.5em;
+  height: 10.5em;
+  -webkit-filter: drop-shadow(0px 0px 4px);
+          filter: drop-shadow(0px 0px 4px);
+}
+
+div.info-container {
+  display: none;
+}
+
+div.infomenu {
+  position: fixed;
+  z-index: 999;
+  width: 90%;
+  height: 4em;
+  margin: 1em;
+  background: rgba(0, 0, 0, 0.596);
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  top: 5em;
+}
+
+div.infomenu div {
+  background: black;
+  border-radius: 1em;
+  margin-top: 2.2em;
+}
+
+div.infomenu div p {
+  padding: 2em;
+}
+
+div.infomenu.menu-btn {
+  display: block;
+}
+
+nav.mode-select {
+  position: fixed;
+  z-index: 999;
+  width: 55%;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.829);
+  height: 100vh;
+  padding: 1em;
+  -webkit-animation: fadeIn .35s;
+          animation: fadeIn .35s;
+}
+
+nav.mode-select ul.menu-items {
+  margin-top: 3em;
+}
+
+nav.mode-select li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav.mode-select li a:hover {
+  font-weight: bold;
+}
+
+div.player {
+  position: fixed;
+  z-index: 999;
+  width: 90%;
+  margin: 1em;
+  background: rgba(0, 0, 0, 0.596);
+  border-radius: 1em;
+  top: 5em;
+  -webkit-animation: fadeIn .35s;
+          animation: fadeIn .35s;
+}
+
+div.player iframe {
+  margin-top: 2.2em;
+}
+
+div.player.menu-btn {
+  display: block;
+}
+
+.menu-close-btn {
+  cursor: pointer;
+  float: right;
+  margin: .5em;
+  padding: .1em;
+}
+
+.menu-close-btn:hover {
+  border: 1px solid;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=spotify.css.map */
